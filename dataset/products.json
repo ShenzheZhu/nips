@@ -1,0 +1,902 @@
+[
+    {
+        "Product Name": "Toyota Camry",
+        "Type": "Vehicle",
+        "Retail Price": "$26995",
+        "Wholesale Price": "$21596",
+        "Features": "Mid-size sedan with 203-hp engine and 8-speed automatic transmission",
+        "Reference": "https://www.toyota.com/camry/",
+        "id": 1
+    },
+    {
+        "Product Name": "Honda Accord",
+        "Type": "Vehicle",
+        "Retail Price": "$27895",
+        "Wholesale Price": "$22316",
+        "Features": "Mid-size sedan with 1.5L turbocharged engine and Honda Sensing suite",
+        "Reference": "https://automobiles.honda.com/accord",
+        "id": 2
+    },
+    {
+        "Product Name": "Tesla Model 3",
+        "Type": "Vehicle",
+        "Retail Price": "$42990",
+        "Wholesale Price": "$34392",
+        "Features": "Electric sedan with 272-mile range and autopilot capabilities",
+        "Reference": "https://www.tesla.com/model3",
+        "id": 3
+    },
+    {
+        "Product Name": "Ford F-150",
+        "Type": "Vehicle",
+        "Retail Price": "$34585",
+        "Wholesale Price": "$27668",
+        "Features": "Full-size pickup truck with aluminum-alloy body and up to 14000 lbs towing capacity",
+        "Reference": "https://www.ford.com/trucks/f150/",
+        "id": 4
+    },
+    {
+        "Product Name": "Chevrolet Silverado",
+        "Type": "Vehicle",
+        "Retail Price": "$36300",
+        "Wholesale Price": "$29040",
+        "Features": "Full-size pickup with multi-flex tailgate and available 2.7L turbo engine",
+        "Reference": "https://www.chevrolet.com/trucks/silverado",
+        "id": 5
+    },
+    {
+        "Product Name": "BMW 3 Series",
+        "Type": "Vehicle",
+        "Retail Price": "$43300",
+        "Wholesale Price": "$34640",
+        "Features": "Luxury compact sedan with 2.0L TwinPower Turbo engine and premium interior",
+        "Reference": "https://www.bmwusa.com/vehicles/3-series/sedan/overview.html",
+        "id": 6
+    },
+    {
+        "Product Name": "Mercedes-Benz C-Class",
+        "Type": "Vehicle",
+        "Retail Price": "$46000",
+        "Wholesale Price": "$36800",
+        "Features": "Luxury sedan with MBUX infotainment system and premium materials",
+        "Reference": "https://www.mbusa.com/en/vehicles/class/c-class/sedan",
+        "id": 7
+    },
+    {
+        "Product Name": "Audi A4",
+        "Type": "Vehicle",
+        "Retail Price": "$40300",
+        "Wholesale Price": "$32240",
+        "Features": "Compact luxury sedan with quattro all-wheel drive and virtual cockpit",
+        "Reference": "https://www.audiusa.com/us/web/en/models/a4/a4/2023/overview.html",
+        "id": 8
+    },
+    {
+        "Product Name": "Jeep Wrangler",
+        "Type": "Vehicle",
+        "Retail Price": "$31195",
+        "Wholesale Price": "$24956",
+        "Features": "Iconic off-road SUV with removable top and doors and 4x4 capability",
+        "Reference": "https://www.jeep.com/wrangler.html",
+        "id": 9
+    },
+    {
+        "Product Name": "Toyota RAV4",
+        "Type": "Vehicle",
+        "Retail Price": "$27575",
+        "Wholesale Price": "$22060",
+        "Features": "Compact SUV with available hybrid powertrain and Toyota Safety Sense 2.0",
+        "Reference": "https://www.toyota.com/rav4/",
+        "id": 10
+    },
+    {
+        "Product Name": "Honda CR-V",
+        "Type": "Vehicle",
+        "Retail Price": "$29500",
+        "Wholesale Price": "$23600",
+        "Features": "Compact SUV with 1.5L turbocharged engine and Honda Sensing suite",
+        "Reference": "https://automobiles.honda.com/cr-v",
+        "id": 11
+    },
+    {
+        "Product Name": "Subaru Outback",
+        "Type": "Vehicle",
+        "Retail Price": "$28895",
+        "Wholesale Price": "$23116",
+        "Features": "All-wheel drive crossover with 8.7 inches of ground clearance",
+        "Reference": "https://www.subaru.com/vehicles/outback/index.html",
+        "id": 12
+    },
+    {
+        "Product Name": "Mazda CX-5",
+        "Type": "Vehicle",
+        "Retail Price": "$26700",
+        "Wholesale Price": "$21360",
+        "Features": "Compact crossover with premium feel and i-Activ AWD",
+        "Reference": "https://www.mazdausa.com/vehicles/cx-5",
+        "id": 13
+    },
+    {
+        "Product Name": "Kia Telluride",
+        "Type": "Vehicle",
+        "Retail Price": "$35890",
+        "Wholesale Price": "$28712",
+        "Features": "Mid-size SUV with three-row seating and premium features",
+        "Reference": "https://www.kia.com/us/en/telluride",
+        "id": 14
+    },
+    {
+        "Product Name": "Hyundai Tucson",
+        "Type": "Vehicle",
+        "Retail Price": "$27250",
+        "Wholesale Price": "$21800",
+        "Features": "Compact SUV with distinctive styling and available hybrid option",
+        "Reference": "https://www.hyundaiusa.com/us/en/vehicles/tucson",
+        "id": 15
+    },
+    {
+        "Product Name": "Volkswagen Golf GTI",
+        "Type": "Vehicle",
+        "Retail Price": "$30530",
+        "Wholesale Price": "$24424",
+        "Features": "Hot hatchback with 2.0L turbocharged engine and sporty handling",
+        "Reference": "https://www.vw.com/en/models/golf-gti.html",
+        "id": 16
+    },
+    {
+        "Product Name": "Porsche 911",
+        "Type": "Vehicle",
+        "Retail Price": "$107550",
+        "Wholesale Price": "$86040",
+        "Features": "Iconic sports car with rear-mounted flat-six engine and exceptional performance",
+        "Reference": "https://www.porsche.com/usa/models/911/",
+        "id": 17
+    },
+    {
+        "Product Name": "Toyota Prius",
+        "Type": "Vehicle",
+        "Retail Price": "$27650",
+        "Wholesale Price": "$22120",
+        "Features": "Hybrid hatchback with up to 57 mpg combined fuel efficiency",
+        "Reference": "https://www.toyota.com/prius/",
+        "id": 18
+    },
+    {
+        "Product Name": "Ford Mustang",
+        "Type": "Vehicle",
+        "Retail Price": "$28865",
+        "Wholesale Price": "$23092",
+        "Features": "American muscle car with 2.3L EcoBoost or 5.0L V8 engine options",
+        "Reference": "https://www.ford.com/cars/mustang/",
+        "id": 19
+    },
+    {
+        "Product Name": "Chevrolet Corvette",
+        "Type": "Vehicle",
+        "Retail Price": "$64500",
+        "Wholesale Price": "$51600",
+        "Features": "Mid-engine sports car with 6.2L V8 producing 495 horsepower",
+        "Reference": "https://www.chevrolet.com/performance/corvette",
+        "id": 20
+    },
+    {
+        "Product Name": "Nissan Altima",
+        "Type": "Vehicle",
+        "Retail Price": "$25490",
+        "Wholesale Price": "$20392",
+        "Features": "Mid-size sedan with available AWD and ProPILOT Assist",
+        "Reference": "https://www.nissanusa.com/vehicles/cars/altima.html",
+        "id": 21
+    },
+    {
+        "Product Name": "Lexus RX",
+        "Type": "Vehicle",
+        "Retail Price": "$49950",
+        "Wholesale Price": "$39960",
+        "Features": "Luxury crossover with hybrid option and Lexus Safety System+ 3.0",
+        "Reference": "https://www.lexus.com/models/RX",
+        "id": 22
+    },
+    {
+        "Product Name": "Acura MDX",
+        "Type": "Vehicle",
+        "Retail Price": "$49550",
+        "Wholesale Price": "$39640",
+        "Features": "Luxury three-row SUV with Super Handling All-Wheel Drive",
+        "Reference": "https://www.acura.com/mdx",
+        "id": 23
+    },
+    {
+        "Product Name": "Volvo XC60",
+        "Type": "Vehicle",
+        "Retail Price": "$43450",
+        "Wholesale Price": "$34760",
+        "Features": "Luxury compact SUV with Scandinavian design and advanced safety features",
+        "Reference": "https://www.volvocars.com/us/cars/xc60/",
+        "id": 24
+    },
+    {
+        "Product Name": "Land Rover Defender",
+        "Type": "Vehicle",
+        "Retail Price": "$51700",
+        "Wholesale Price": "$41360",
+        "Features": "Off-road SUV with advanced terrain response system and rugged capabilities",
+        "Reference": "https://www.landroverusa.com/defender/index.html",
+        "id": 25
+    },
+    {
+        "Product Name": "GMC Sierra",
+        "Type": "Vehicle",
+        "Retail Price": "$38000",
+        "Wholesale Price": "$30400",
+        "Features": "Full-size pickup truck with MultiPro tailgate and premium features",
+        "Reference": "https://www.gmc.com/trucks/sierra",
+        "id": 26
+    },
+    {
+        "Product Name": "Ram 1500",
+        "Type": "Vehicle",
+        "Retail Price": "$38295",
+        "Wholesale Price": "$30636",
+        "Features": "Full-size pickup with eTorque mild hybrid system and luxurious interior options",
+        "Reference": "https://www.ramtrucks.com/ram-1500.html",
+        "id": 27
+    },
+    {
+        "Product Name": "Cadillac Escalade",
+        "Type": "Vehicle",
+        "Retail Price": "$81895",
+        "Wholesale Price": "$65516",
+        "Features": "Luxury full-size SUV with Super Cruise hands-free driving and OLED displays",
+        "Reference": "https://www.cadillac.com/suvs/escalade",
+        "id": 28
+    },
+    {
+        "Product Name": "Rivian R1T",
+        "Type": "Vehicle",
+        "Retail Price": "$73000",
+        "Wholesale Price": "$58400",
+        "Features": "Electric pickup truck with quad-motor AWD and 314-mile range",
+        "Reference": "https://rivian.com/r1t",
+        "id": 29
+    },
+    {
+        "Product Name": "Ford Bronco",
+        "Type": "Vehicle",
+        "Retail Price": "$33895",
+        "Wholesale Price": "$27116",
+        "Features": "Rugged SUV with removable doors and roof and G.O.A.T. terrain management system",
+        "Reference": "https://www.ford.com/bronco/",
+        "id": 30
+    },
+    {
+        "Product Name": "Lucid Air",
+        "Type": "Vehicle",
+        "Retail Price": "$87400",
+        "Wholesale Price": "$69920",
+        "Features": "Luxury electric sedan with up to 516-mile range and fast charging",
+        "Reference": "https://www.lucidmotors.com/air",
+        "id": 31
+    },
+    {
+        "Product Name": "Volkswagen ID.4",
+        "Type": "Vehicle",
+        "Retail Price": "$41000",
+        "Wholesale Price": "$32800",
+        "Features": "Electric SUV with 275-mile range and minimalist interior",
+        "Reference": "https://www.vw.com/en/models/id-4.html",
+        "id": 32
+    },
+    {
+        "Product Name": "Kia EV6",
+        "Type": "Vehicle",
+        "Retail Price": "$45950",
+        "Wholesale Price": "$36760",
+        "Features": "Electric crossover with up to 310-mile range and fast charging",
+        "Reference": "https://www.kia.com/us/en/ev6",
+        "id": 33
+    },
+    {
+        "Product Name": "Hyundai Ioniq 5",
+        "Type": "Vehicle",
+        "Retail Price": "$41450",
+        "Wholesale Price": "$33160",
+        "Features": "Electric crossover with retro-futuristic design and 800V architecture",
+        "Reference": "https://www.hyundaiusa.com/us/en/vehicles/ioniq-5",
+        "id": 34
+    },
+    {
+        "Product Name": "Genesis GV80",
+        "Type": "Vehicle",
+        "Retail Price": "$57700",
+        "Wholesale Price": "$46160",
+        "Features": "Luxury mid-size SUV with 3D digital cluster and premium materials",
+        "Reference": "https://www.genesis.com/us/en/models/suv-gv80.html",
+        "id": 35
+    },
+    {
+        "Product Name": "Audi e-tron GT",
+        "Type": "Vehicle",
+        "Retail Price": "$106500",
+        "Wholesale Price": "$85200",
+        "Features": "Electric sports sedan with dual motors and 238-mile range",
+        "Reference": "https://www.audiusa.com/us/web/en/models/e-tron/e-tron-gt/2023/overview.html",
+        "id": 36
+    },
+    {
+        "Product Name": "Jaguar F-Pace",
+        "Type": "Vehicle",
+        "Retail Price": "$52400",
+        "Wholesale Price": "$41920",
+        "Features": "Luxury crossover with sporty handling and premium British design",
+        "Reference": "https://www.jaguarusa.com/all-models/f-pace/index.html",
+        "id": 37
+    },
+    {
+        "Product Name": "Maserati Levante",
+        "Type": "Vehicle",
+        "Retail Price": "$83995",
+        "Wholesale Price": "$67196",
+        "Features": "Luxury SUV with Italian flair and Ferrari-built engine options",
+        "Reference": "https://www.maserati.com/us/en/models/levante",
+        "id": 38
+    },
+    {
+        "Product Name": "Alfa Romeo Stelvio",
+        "Type": "Vehicle",
+        "Retail Price": "$45550",
+        "Wholesale Price": "$36440",
+        "Features": "Italian sport SUV with passionate styling and driving dynamics",
+        "Reference": "https://www.alfaromeousa.com/suv/stelvio",
+        "id": 39
+    },
+    {
+        "Product Name": "BMW X5",
+        "Type": "Vehicle",
+        "Retail Price": "$62500",
+        "Wholesale Price": "$50000",
+        "Features": "Luxury mid-size SUV with xDrive all-wheel drive and luxurious cabin",
+        "Reference": "https://www.bmwusa.com/vehicles/x-models/x5/sports-activity-vehicle/overview.html",
+        "id": 40
+    },
+    {
+        "Product Name": "Samsung 65\" QN90B Neo QLED 4K TV",
+        "Type": "Electronics",
+        "Retail Price": "$1999",
+        "Wholesale Price": "$1399",
+        "Features": "4K UHD TV with Quantum Mini LED and Anti-Reflection technology",
+        "Reference": "https://www.samsung.com/us/televisions-home-theater/tvs/samsung-neo-qled-4k/",
+        "id": 41
+    },
+    {
+        "Product Name": "LG C2 65\" OLED TV",
+        "Type": "Electronics",
+        "Retail Price": "$1899",
+        "Wholesale Price": "$1329",
+        "Features": "4K OLED TV with perfect blacks and Dolby Vision IQ",
+        "Reference": "https://www.lg.com/us/tvs/lg-oled65c2pua-oled-4k-tv",
+        "id": 42
+    },
+    {
+        "Product Name": "Sony A80J 65\" OLED TV",
+        "Type": "Electronics",
+        "Retail Price": "$1799",
+        "Wholesale Price": "$1259",
+        "Features": "4K OLED TV with XR Cognitive Processor and Acoustic Surface Audio+",
+        "Reference": "https://electronics.sony.com/tv-video/televisions/all-tvs/p/xr65a80j",
+        "id": 43
+    },
+    {
+        "Product Name": "Apple iPhone 14 Pro",
+        "Type": "Electronics",
+        "Retail Price": "$999",
+        "Wholesale Price": "$699",
+        "Features": "Smartphone with A16 Bionic chip and ProMotion display",
+        "Reference": "https://www.apple.com/iphone-14-pro/",
+        "id": 44
+    },
+    {
+        "Product Name": "Samsung Galaxy S23 Ultra",
+        "Type": "Electronics",
+        "Retail Price": "$1199",
+        "Wholesale Price": "$839",
+        "Features": "Smartphone with 200MP camera and S Pen functionality",
+        "Reference": "https://www.samsung.com/us/smartphones/galaxy-s23-ultra/",
+        "id": 45
+    },
+    {
+        "Product Name": "Google Pixel 7 Pro",
+        "Type": "Electronics",
+        "Retail Price": "$899",
+        "Wholesale Price": "$629",
+        "Features": "Smartphone with Tensor G2 chip and advanced camera features",
+        "Reference": "https://store.google.com/product/pixel_7_pro",
+        "id": 46
+    },
+    {
+        "Product Name": "Apple MacBook Pro 16\"",
+        "Type": "Electronics",
+        "Retail Price": "$2499",
+        "Wholesale Price": "$1749",
+        "Features": "Laptop with M2 Pro/Max chip and Liquid Retina XDR display",
+        "Reference": "https://www.apple.com/macbook-pro/",
+        "id": 47
+    },
+    {
+        "Product Name": "Dell XPS 15",
+        "Type": "Electronics",
+        "Retail Price": "$1799",
+        "Wholesale Price": "$1259",
+        "Features": "Laptop with 12th Gen Intel Core processors and OLED display option",
+        "Reference": "https://www.dell.com/en-us/shop/dell-laptops/xps-15-laptop/spd/xps-15-laptop",
+        "id": 48
+    },
+    {
+        "Product Name": "Lenovo ThinkPad X1 Carbon",
+        "Type": "Electronics",
+        "Retail Price": "$1619",
+        "Wholesale Price": "$1133",
+        "Features": "Business laptop with Intel Core i7 and 14\" WUXGA display",
+        "Reference": "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/x1-carbon-gen-10/",
+        "id": 49
+    },
+    {
+        "Product Name": "Sony WH-1000XM5",
+        "Type": "Electronics",
+        "Retail Price": "$399",
+        "Wholesale Price": "$279",
+        "Features": "Wireless noise-canceling headphones with 30-hour battery life",
+        "Reference": "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm5-b",
+        "id": 50
+    },
+    {
+        "Product Name": "Apple AirPods Pro 2",
+        "Type": "Electronics",
+        "Retail Price": "$249",
+        "Wholesale Price": "$174",
+        "Features": "Wireless earbuds with active noise cancellation and spatial audio",
+        "Reference": "https://www.apple.com/airpods-pro/",
+        "id": 51
+    },
+    {
+        "Product Name": "Bose QuietComfort Earbuds II",
+        "Type": "Electronics",
+        "Retail Price": "$299",
+        "Wholesale Price": "$209",
+        "Features": "Wireless earbuds with CustomTune technology for personalized noise cancellation",
+        "Reference": "https://www.bose.com/en_us/products/headphones/earbuds/quietcomfort-earbuds-ii.html",
+        "id": 52
+    },
+    {
+        "Product Name": "Apple iPad Pro 12.9\"",
+        "Type": "Electronics",
+        "Retail Price": "$1099",
+        "Wholesale Price": "$769",
+        "Features": "Tablet with M2 chip and Liquid Retina XDR display",
+        "Reference": "https://www.apple.com/ipad-pro/",
+        "id": 53
+    },
+    {
+        "Product Name": "Samsung Galaxy Tab S8 Ultra",
+        "Type": "Electronics",
+        "Retail Price": "$1099",
+        "Wholesale Price": "$769",
+        "Features": "Tablet with 14.6\" Super AMOLED display and S Pen included",
+        "Reference": "https://www.samsung.com/us/tablets/galaxy-tab-s8/",
+        "id": 54
+    },
+    {
+        "Product Name": "Microsoft Surface Pro 9",
+        "Type": "Electronics",
+        "Retail Price": "$999",
+        "Wholesale Price": "$699",
+        "Features": "2-in-1 laptop/tablet with Intel Core i5/i7 or Microsoft SQ3 processor",
+        "Reference": "https://www.microsoft.com/en-us/d/surface-pro-9/93vkd8np4fvk",
+        "id": 55
+    },
+    {
+        "Product Name": "Dyson V15 Detect",
+        "Type": "Electronics",
+        "Retail Price": "$749",
+        "Wholesale Price": "$524",
+        "Features": "Cordless vacuum with laser dust detection and HEPA filtration",
+        "Reference": "https://www.dyson.com/vacuum-cleaners/cordless/v15/detect-absolute-nickel",
+        "id": 56
+    },
+    {
+        "Product Name": "Vitamix A3500",
+        "Type": "Electronics",
+        "Retail Price": "$649",
+        "Wholesale Price": "$454",
+        "Features": "High-performance blender with touchscreen controls and wireless connectivity",
+        "Reference": "https://www.vitamix.com/us/en_us/shop/a3500",
+        "id": 57
+    },
+    {
+        "Product Name": "KitchenAid Pro Line Stand Mixer",
+        "Type": "Electronics",
+        "Retail Price": "$629",
+        "Wholesale Price": "$440",
+        "Features": "Professional-grade stand mixer with 7-quart bowl and 1.3HP motor",
+        "Reference": "https://www.kitchenaid.com/countertop-appliances/stand-mixers/bowl-lift-stand-mixers/p.7-quart-bowl-lift-stand-mixer.ksm7586pca.html",
+        "id": 58
+    },
+    {
+        "Product Name": "Sony Alpha a7 IV",
+        "Type": "Electronics",
+        "Retail Price": "$2499",
+        "Wholesale Price": "$1749",
+        "Features": "Full-frame mirrorless camera with 33MP sensor and 4K60p video",
+        "Reference": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/full-frame/p/ilce7m4-b",
+        "id": 59
+    },
+    {
+        "Product Name": "Canon EOS R6 Mark II",
+        "Type": "Electronics",
+        "Retail Price": "$2499",
+        "Wholesale Price": "$1749",
+        "Features": "Full-frame mirrorless camera with 24.2MP sensor and 40fps burst shooting",
+        "Reference": "https://www.usa.canon.com/cameras/eos-r6-mark-ii",
+        "id": 60
+    },
+    {
+        "Product Name": "GoPro HERO11 Black",
+        "Type": "Electronics",
+        "Retail Price": "$499",
+        "Wholesale Price": "$349",
+        "Features": "Action camera with 5.3K video and HyperSmooth 5.0 stabilization",
+        "Reference": "https://gopro.com/en/us/shop/cameras/hero11-black/CHDHX-111-master.html",
+        "id": 61
+    },
+    {
+        "Product Name": "Apple Watch Series 8",
+        "Type": "Electronics",
+        "Retail Price": "$399",
+        "Wholesale Price": "$279",
+        "Features": "Smartwatch with temperature sensing and crash detection",
+        "Reference": "https://www.apple.com/apple-watch-series-8/",
+        "id": 62
+    },
+    {
+        "Product Name": "Samsung Galaxy Watch5 Pro",
+        "Type": "Electronics",
+        "Retail Price": "$449",
+        "Wholesale Price": "$314",
+        "Features": "Smartwatch with titanium case and 80-hour battery life",
+        "Reference": "https://www.samsung.com/us/watches/galaxy-watch5-pro/",
+        "id": 63
+    },
+    {
+        "Product Name": "Garmin Fenix 7X Sapphire Solar",
+        "Type": "Electronics",
+        "Retail Price": "$899",
+        "Wholesale Price": "$629",
+        "Features": "GPS multisport watch with solar charging and built-in flashlight",
+        "Reference": "https://www.garmin.com/en-US/p/735611",
+        "id": 64
+    },
+    {
+        "Product Name": "Sonos Arc",
+        "Type": "Electronics",
+        "Retail Price": "$899",
+        "Wholesale Price": "$629",
+        "Features": "Premium soundbar with Dolby Atmos and voice assistant support",
+        "Reference": "https://www.sonos.com/en-us/shop/arc",
+        "id": 65
+    },
+    {
+        "Product Name": "LG CordZero A9 Kompressor",
+        "Type": "Electronics",
+        "Retail Price": "$599",
+        "Wholesale Price": "$419",
+        "Features": "Cordless stick vacuum with auto-empty dock and HEPA filtration",
+        "Reference": "https://www.lg.com/us/vacuum-cleaners/lg-a913bm-stick-vacuum",
+        "id": 66
+    },
+    {
+        "Product Name": "Nintendo Switch OLED",
+        "Type": "Electronics",
+        "Retail Price": "$349",
+        "Wholesale Price": "$244",
+        "Features": "Hybrid gaming console with 7\" OLED screen and enhanced audio",
+        "Reference": "https://www.nintendo.com/switch/",
+        "id": 67
+    },
+    {
+        "Product Name": "PlayStation 5",
+        "Type": "Electronics",
+        "Retail Price": "$499",
+        "Wholesale Price": "$349",
+        "Features": "Gaming console with ultra-high-speed SSD and haptic feedback controller",
+        "Reference": "https://www.playstation.com/en-us/ps5/",
+        "id": 68
+    },
+    {
+        "Product Name": "Xbox Series X",
+        "Type": "Electronics",
+        "Retail Price": "$499",
+        "Wholesale Price": "$349",
+        "Features": "Gaming console with 12 teraflops of processing power and Quick Resume feature",
+        "Reference": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+        "id": 69
+    },
+    {
+        "Product Name": "Bose Smart Soundbar 900",
+        "Type": "Electronics",
+        "Retail Price": "$899",
+        "Wholesale Price": "$629",
+        "Features": "Premium soundbar with Dolby Atmos and proprietary PhaseGuide technology",
+        "Reference": "https://www.bose.com/en_us/products/speakers/soundbars/bose-smart-soundbar-900.html",
+        "id": 70
+    },
+    {
+        "Product Name": "5-Bedroom House in San Francisco CA",
+        "Type": "Real Estate",
+        "Retail Price": "$3500000",
+        "Wholesale Price": "$2800000",
+        "Features": "Victorian-style home with 3 bathrooms and updated kitchen in Pacific Heights",
+        "Reference": "https://www.zillow.com/homedetails/",
+        "id": 71
+    },
+    {
+        "Product Name": "3-Bedroom Condo in Manhattan NY",
+        "Type": "Real Estate",
+        "Retail Price": "$2800000",
+        "Wholesale Price": "$2240000",
+        "Features": "Luxury high-rise condo with doorman and rooftop terrace in Upper East Side",
+        "Reference": "https://www.zillow.com/homedetails/",
+        "id": 72
+    },
+    {
+        "Product Name": "4-Bedroom House in Los Angeles CA",
+        "Type": "Real Estate",
+        "Retail Price": "$2100000",
+        "Wholesale Price": "$1680000",
+        "Features": "Modern home with pool and outdoor entertainment area in Sherman Oaks",
+        "Reference": "https://www.realtor.com/realestateandhomes-detail/",
+        "id": 73
+    },
+    {
+        "Product Name": "Beachfront Villa in Miami FL",
+        "Type": "Real Estate",
+        "Retail Price": "$5800000",
+        "Wholesale Price": "$4640000",
+        "Features": "6-bedroom Mediterranean-style villa with private beach access and infinity pool",
+        "Reference": "https://www.sothebysrealty.com/",
+        "id": 74
+    },
+    {
+        "Product Name": "2-Bedroom Loft in Chicago IL",
+        "Type": "Real Estate",
+        "Retail Price": "$750000",
+        "Wholesale Price": "$600000",
+        "Features": "Industrial-style loft with exposed brick and 14-foot ceilings in West Loop",
+        "Reference": "https://www.redfin.com/",
+        "id": 75
+    },
+    {
+        "Product Name": "3-Bedroom Townhouse in Boston MA",
+        "Type": "Real Estate",
+        "Retail Price": "$1200000",
+        "Wholesale Price": "$960000",
+        "Features": "Historic brownstone with original features and modern updates in Back Bay",
+        "Reference": "https://www.compass.com/",
+        "id": 76
+    },
+    {
+        "Product Name": "Mountain Cabin in Aspen CO",
+        "Type": "Real Estate",
+        "Retail Price": "$3200000",
+        "Wholesale Price": "$2560000",
+        "Features": "4-bedroom luxury cabin with panoramic mountain views and ski-in/ski-out access",
+        "Reference": "https://www.christiesrealestate.com/",
+        "id": 77
+    },
+    {
+        "Product Name": "Ranch Property in Montana",
+        "Type": "Real Estate",
+        "Retail Price": "$7500000",
+        "Wholesale Price": "$6000000",
+        "Features": "200-acre working ranch with 5-bedroom main house and multiple outbuildings",
+        "Reference": "https://www.hallhall.com/",
+        "id": 78
+    },
+    {
+        "Product Name": "Penthouse in Seattle WA",
+        "Type": "Real Estate",
+        "Retail Price": "$4200000",
+        "Wholesale Price": "$3360000",
+        "Features": "3-bedroom penthouse with 360-degree views and private roof deck",
+        "Reference": "https://www.windermere.com/",
+        "id": 79
+    },
+    {
+        "Product Name": "Historic Mansion in Charleston SC",
+        "Type": "Real Estate",
+        "Retail Price": "$3950000",
+        "Wholesale Price": "$3160000",
+        "Features": "6-bedroom antebellum mansion with garden and carriage house in historic district",
+        "Reference": "https://www.bhsusa.com/",
+        "id": 80
+    },
+    {
+        "Product Name": "Vineyard Estate in Napa Valley CA",
+        "Type": "Real Estate",
+        "Retail Price": "$8750000",
+        "Wholesale Price": "$7000000",
+        "Features": "20-acre wine-producing estate with 5-bedroom villa and tasting room",
+        "Reference": "https://www.pacificsothebysrealty.com/",
+        "id": 81
+    },
+    {
+        "Product Name": "Desert Home in Scottsdale AZ",
+        "Type": "Real Estate",
+        "Retail Price": "$1850000",
+        "Wholesale Price": "$1480000",
+        "Features": "4-bedroom contemporary home with pool and desert landscaping",
+        "Reference": "https://www.russlyon.com/",
+        "id": 82
+    },
+    {
+        "Product Name": "Lakefront Property in Austin TX",
+        "Type": "Real Estate",
+        "Retail Price": "$2950000",
+        "Wholesale Price": "$2360000",
+        "Features": "5-bedroom modern home with private dock and outdoor kitchen on Lake Travis",
+        "Reference": "https://www.kw.com/",
+        "id": 83
+    },
+    {
+        "Product Name": "High-Rise Apartment in San Diego CA",
+        "Type": "Real Estate",
+        "Retail Price": "$1150000",
+        "Wholesale Price": "$920000",
+        "Features": "2-bedroom luxury apartment with ocean views and resort-style amenities",
+        "Reference": "https://www.compass.com/",
+        "id": 84
+    },
+    {
+        "Product Name": "Colonial Home in Greenwich CT",
+        "Type": "Real Estate",
+        "Retail Price": "$4950000",
+        "Wholesale Price": "$3960000",
+        "Features": "6-bedroom colonial with tennis court and pool on 2 acres",
+        "Reference": "https://www.sothebysrealty.com/",
+        "id": 85
+    },
+    {
+        "Product Name": "Victorian Home in San Francisco CA",
+        "Type": "Real Estate",
+        "Retail Price": "$4200000",
+        "Wholesale Price": "$3360000",
+        "Features": "4-bedroom restored Victorian with period details and modern systems in Noe Valley",
+        "Reference": "https://www.compass.com/",
+        "id": 86
+    },
+    {
+        "Product Name": "Beach House in Malibu CA",
+        "Type": "Real Estate",
+        "Retail Price": "$12500000",
+        "Wholesale Price": "$10000000",
+        "Features": "4-bedroom contemporary beach house with direct ocean access and panoramic views",
+        "Reference": "https://www.theagencyre.com/",
+        "id": 87
+    },
+    {
+        "Product Name": "Rural Farm in Vermont",
+        "Type": "Real Estate",
+        "Retail Price": "$1250000",
+        "Wholesale Price": "$1000000",
+        "Features": "50-acre organic farm with 4-bedroom farmhouse and multiple barns",
+        "Reference": "https://www.landvest.com/",
+        "id": 88
+    },
+    {
+        "Product Name": "Urban Loft in Portland OR",
+        "Type": "Real Estate",
+        "Retail Price": "$895000",
+        "Wholesale Price": "$716000",
+        "Features": "2-bedroom industrial loft with high ceilings and city views in Pearl District",
+        "Reference": "https://www.windermere.com/",
+        "id": 89
+    },
+    {
+        "Product Name": "Modern Home in Denver CO",
+        "Type": "Real Estate",
+        "Retail Price": "$1650000",
+        "Wholesale Price": "$1320000",
+        "Features": "4-bedroom eco-friendly home with solar panels and mountain views",
+        "Reference": "https://www.redfin.com/",
+        "id": 90
+    },
+    {
+        "Product Name": "Waterfront Estate in Naples FL",
+        "Type": "Real Estate",
+        "Retail Price": "$7250000",
+        "Wholesale Price": "$5800000",
+        "Features": "5-bedroom Mediterranean estate with private beach and boat dock",
+        "Reference": "https://www.johnrwood.com/",
+        "id": 91
+    },
+    {
+        "Product Name": "French Quarter Townhouse in New Orleans LA",
+        "Type": "Real Estate",
+        "Retail Price": "$1850000",
+        "Wholesale Price": "$1480000",
+        "Features": "3-bedroom historic townhouse with courtyard and wrought-iron balconies",
+        "Reference": "https://www.latter-blum.com/",
+        "id": 92
+    },
+    {
+        "Product Name": "Craftsman Bungalow in Portland OR",
+        "Type": "Real Estate",
+        "Retail Price": "$950000",
+        "Wholesale Price": "$760000",
+        "Features": "3-bedroom restored craftsman with built-ins and original woodwork in Laurelhurst",
+        "Reference": "https://www.windermere.com/",
+        "id": 93
+    },
+    {
+        "Product Name": "Modern Condo in Austin TX",
+        "Type": "Real Estate",
+        "Retail Price": "$750000",
+        "Wholesale Price": "$600000",
+        "Features": "2-bedroom luxury condo with downtown views and rooftop pool",
+        "Reference": "https://www.moreland.com/",
+        "id": 94
+    },
+    {
+        "Product Name": "Spanish Colonial in Santa Barbara CA",
+        "Type": "Real Estate",
+        "Retail Price": "$3850000",
+        "Wholesale Price": "$3080000",
+        "Features": "4-bedroom Spanish-style home with tile roof and courtyard",
+        "Reference": "https://www.villagerealestate.com/",
+        "id": 95
+    },
+    {
+        "Product Name": "Luxury Apartment in Chicago IL",
+        "Type": "Real Estate",
+        "Retail Price": "$2100000",
+        "Wholesale Price": "$1680000",
+        "Features": "3-bedroom apartment in historic building with lake views on Gold Coast",
+        "Reference": "https://www.bairdwarner.com/",
+        "id": 96
+    },
+    {
+        "Product Name": "Mountain View Home in Boulder CO",
+        "Type": "Real Estate",
+        "Retail Price": "$2450000",
+        "Wholesale Price": "$1960000",
+        "Features": "4-bedroom contemporary home with floor-to-ceiling windows and Flatiron views",
+        "Reference": "https://www.compass.com/",
+        "id": 97
+    },
+    {
+        "Product Name": "Golf Course Property in Hilton Head SC",
+        "Type": "Real Estate",
+        "Retail Price": "$1950000",
+        "Wholesale Price": "$1560000",
+        "Features": "4-bedroom home on golf course with pool and outdoor living area",
+        "Reference": "https://www.hiltonheadsir.com/",
+        "id": 98
+    },
+    {
+        "Product Name": "Downtown Penthouse in Nashville TN",
+        "Type": "Real Estate",
+        "Retail Price": "$3200000",
+        "Wholesale Price": "$2560000",
+        "Features": "3-bedroom penthouse with wraparound terrace and city views",
+        "Reference": "https://www.villagerealestate.com/",
+        "id": 99
+    },
+    {
+        "Product Name": "Mid-Century Modern in Palm Springs CA",
+        "Type": "Real Estate",
+        "Retail Price": "$1750000",
+        "Wholesale Price": "$1400000",
+        "Features": "3-bedroom restored mid-century home with pool and desert landscaping",
+        "Reference": "https://www.compass.com/",
+        "id": 100
+    }
+]
