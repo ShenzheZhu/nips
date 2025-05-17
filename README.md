@@ -8,8 +8,7 @@ $^{4}$ Massachusetts Institute of Technology, $^{5}$ Stanford University<br>
 
 [**📜 Project Page**]() | [**📝 arxiv**]()
 
-<img src="asset/teaser.png" width="1000">
-</div>
+
 
 ## 📰 News
 - **2025/05/17**: We have released our code and dataset.
