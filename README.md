@@ -142,18 +142,3 @@ We provide comprehensive model anomaly analysis tools in `data_postprocess/draw_
     ├── draw_result.ipynb       # Calculate metrics and generate visualizations
     └── draw_risk.ipynb         # Model anomaly analysis
 ```
-## 📲 Contact
-- Shenzhe Zhu: cho.zhu@mail.utoronto.ca
-- Jiaxin Pei: pedropei@stanford.edu
-
-## 📖 Citation
-
-If you use this code in your research, please cite our paper:
-```
-@article{your_paper_citation,
-  title={The Automated but Risky Game: Modeling Agent-to-Agent Negotiations and Transactions in Consumer Markets},
-  author={Your Name and Co-authors},
-  journal={Journal Name},
-  year={2024}
-}
-```
