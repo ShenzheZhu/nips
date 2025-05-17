@@ -1,25 +1,14 @@
 <div align="center">
 
-<h1><img src="asset/payment-security.png" width="50"> The Automated but Risky Game: Modeling Agent-to-Agent Negotiations and Transactions in Consumer Markets</h1>
+# <img src="asset/payment-security.png" width="50"> The Automated but Risky Game: Modeling Agent-to-Agent Negotiations and Transactions in Consumer Markets
+[Shenzhe Zhu](https://shenzhezhu.github.io) $^{1}$, [Jiao Sun](https://sunjiao123sun.github.io/) $^{2}$, Yi Nian $^{3}$, [Tobin South](https://tobin.page/) $^{4}$, [Alex Pentland](https://www.media.mit.edu/people/sandy/overview/) $^{4,5}$, [Jiaxin Pei](https://jiaxin-pei.github.io/) $^{5,✝}$<br>
+$^{1}$ University of Toronto, $^{2}$ Google DeepMind, $^{3}$ University of Southern California<br>
+$^{4}$ Massachusetts Institute of Technology, $^{5}$ Stanford University<br>
+($^{✝}$ Corresponding Author)
 
-<p>
-<a href="https://shenzhezhu.github.io">Shenzhe Zhu</a><sup>1</sup>, 
-<a href="https://sunjiao123sun.github.io/">Jiao Sun</a><sup>2</sup>, 
-Yi Nian<sup>3</sup>, 
-<a href="https://tobin.page/">Tobin South</a><sup>4</sup>, 
-<a href="https://www.media.mit.edu/people/sandy/overview/">Alex Pentland</a><sup>4,5</sup>, 
-<a href="https://jiaxin-pei.github.io/">Jiaxin Pei</a><sup>5,✝</sup><br>
-<sup>1</sup> University of Toronto, <sup>2</sup> Google DeepMind, <sup>3</sup> University of Southern California<br>
-<sup>4</sup> Massachusetts Institute of Technology, <sup>5</sup> Stanford University<br>
-(<sup>✝</sup> Corresponding Author)
-</p>
-
-<p>
-<a href="#">📜 Project Page</a> | <a href="#">📝 arXiv</a>
-</p>
-
+[**📜 Project Page**]() | [**📝 arxiv**]()
 </div>
-
+<img src="asset/teaser.png" width="1000">
 
 
 ## 📰 News
