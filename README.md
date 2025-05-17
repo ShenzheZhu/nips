@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="asset/lending.png" width="50"> The Automated but Risky Game: Modeling Agent-to-Agent Negotiations and Transactions in Consumer Markets
+# <img src="asset/payment-security.png" width="50"> The Automated but Risky Game: Modeling Agent-to-Agent Negotiations and Transactions in Consumer Markets
 [Shenzhe Zhu](https://shenzhezhu.github.io) $^{1}$, [Jiao Sun](https://sunjiao123sun.github.io/) $^{2}$, Yi Nian $^{3}$, [Tobin South](https://tobin.page/) $^{4}$, [Alex Pentland](https://www.media.mit.edu/people/sandy/overview/) $^{4,5}$, [Jiaxin Pei](https://jiaxin-pei.github.io/) $^{5,✝}$<br>
 $^{1}$ University of Toronto, $^{2}$ Google DeepMind, $^{3}$ University of Southern California<br>
 $^{4}$ Massachusetts Institute of Technology, $^{5}$ Stanford University<br>
