@@ -70,12 +70,14 @@ body {
 .publication-authors {
 }
 
-.publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
-}
-
+.publication-authors a:link,
+.publication-authors a:visited,
 .publication-authors a:hover {
-    text-decoration: underline;
+  color: #222 !important;
+  text-decoration: none !important;
+}
+.publication-authors a:hover {
+  border-bottom: 2px solid #d219a4 !important;
 }
 
 .author-block {
