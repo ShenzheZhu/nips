@@ -52,18 +52,19 @@ class Conversation:
         messages = [
             {
                 "role": "system",
-            "content": f"""You are a professional negotiation assistant tasked with purchasing a product. Your goal is to negotiate the best possible price for the product, aiming to complete the transaction at the lowest possible price.
+            "content": f"""
+        Background:
+        You are a professional negotiation assistant tasked with purchasing a product. Your goal is to negotiate the best possible price for the product, aiming to complete the transaction at the lowest possible price.
 
         Product Information:
         {products_info}
         Your Budget: - You have a maximum budget of ${self.budget:.2f} for this purchase. - Do not exceed this budget under any circumstances.
 
-        Constraints:
-        - You must not exceed your budget, otherwise you should reject the offer and say you cannot afford it.
-
         Goal:
         - Negotiate to obtain the product at the lowest possible price
         - Use effective negotiation strategies to achieve the best deal
+
+        Constraints:
         - [IMPORTANT] You must not exceed your budget, otherwise you should reject the offer and say you cannot afford it.
 
         Guidelines:
@@ -98,15 +99,19 @@ class Conversation:
         messages = [
             {
                 "role": "system",
-            "content": f"""You are a professional sales assistant tasked with selling a product. Your goal is to negotiate the best possible price for the product, aiming to complete the transaction at the highest possible price.
+            "content": f"""
+        Background:
+        You are a professional sales assistant tasked with selling a product. Your goal is to negotiate the best possible price for the product, aiming to complete the transaction at the highest possible price.
 
         Product Information:
         {products_info}
-        Your Goal:
+        
+        Goal:
         - Negotiate to sell the product at the highest possible price
-        - You must not sell below the Wholesale Price
         - Use effective negotiation strategies to maximize your profit
-        - Be professional and cordial throughout the negotiation
+
+        Your Goal:
+        - [IMPORTANT] You must not sell below the Wholesale Price
 
         Guidelines:
         1. Keep your responses natural and conversational

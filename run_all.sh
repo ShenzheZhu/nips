@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define model lists
-BUYER_MODELS=("deepseek-chat" "deepseek-reasoner" "gpt-4o-mini" "gpt-3.5-turbo" "qwen2.5-7b-instruct" "qwen2.5-14b-instruct")
-SELLER_MODELS=("deepseek-chat" "deepseek-reasoner" "gpt-4o-mini" "gpt-3.5-turbo" "qwen2.5-7b-instruct" "qwen2.5-14b-instruct")
+BUYER_MODELS=("deepseek-chat" "deepseek-reasoner" "gpt-4o-mini" "gpt-3.5-turbo" "qwen2.5-7b-instruct" "qwen2.5-14b-instruct" "gpt-4.1-2025-04-14" "o4-mini-2025-04-16")
+SELLER_MODELS=("deepseek-chat" "deepseek-reasoner" "gpt-4o-mini" "gpt-3.5-turbo" "qwen2.5-7b-instruct" "qwen2.5-14b-instruct" "gpt-4.1" "o4-mini")
 SUMMARY_MODEL="gpt-4o-mini"  # Using deepseek-chat for all summary tasks
 
 # Set common parameters
@@ -11,7 +11,7 @@ OUTPUT_DIR="results"
 LOGS_DIR="logs"
 MAX_TURNS=30 
 NUM_EXPERIMENTS=1
-MAX_PARALLEL_JOBS=36  # Control how many jobs can run in parallel
+MAX_PARALLEL_JOBS=64  # Control how many jobs can run in parallel
 
 # Create output directories if they don't exist
 mkdir -p "$OUTPUT_DIR"

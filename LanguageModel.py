@@ -3,10 +3,11 @@ import json
 import random
 import logging
 from openai import OpenAI
-from Config import OPENAI_API_KEY, DEEPSEEK_API_KEY, ZHI_API_KEY
+from Config import OPENAI_API_KEY, DEEPSEEK_API_KEY, ZHI_API_KEY, GOOGLE_API_KEY
 import time
 from openai import OpenAIError
 from typing import List, Dict, Optional, Union
+from google import genai
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -22,7 +23,7 @@ class LanguageModel:
         
     def _setup_provider(self) -> None:
         """Setup the appropriate provider based on model name."""
-        if "gpt" in self.model_name.lower():
+        if "gpt" in self.model_name.lower() or (self.model_name.lower().count("o") > 0 and any(c.isdigit() for c in self.model_name[self.model_name.lower().index("o")+1:])):
             self.client = OpenAI(api_key=OPENAI_API_KEY)
             self.provider = "openai"
             self.api_keys = [OPENAI_API_KEY]
@@ -34,6 +35,10 @@ class LanguageModel:
             self.api_keys = ZHI_API_KEY
             self.provider = "zhizengzeng"
             self._setup_client_with_next_key()
+        elif "gemini" in self.model_name.lower():
+            self.client = genai.Client(api_key=GOOGLE_API_KEY)
+            self.provider = "google"
+            self.api_keys = [GOOGLE_API_KEY]
         else:
             raise ValueError(f"Unsupported model: {self.model_name}")
             
@@ -94,6 +99,16 @@ class LanguageModel:
                     msg["content"] = ""
                 validated_messages.append(msg)
             messages = validated_messages
+        elif self.provider == "google":
+            # Convert messages to Gemini format
+            validated_messages = []
+            for msg in messages:
+                if msg["role"] == "system":
+                    # Add system message as context
+                    validated_messages.append({"role": "user", "content": f"System: {msg['content']}"})
+                else:
+                    validated_messages.append(msg)
+            messages = validated_messages
             
         # Log messages for debugging
         logger.debug(f"Provider: {self.provider}, Model: {self.model_name}")
@@ -102,24 +117,47 @@ class LanguageModel:
         for attempt in range(max_retries):
             try:
                 self._enforce_rate_limit()
-                response = self.client.chat.completions.create(
-                    model=self.model_name,
-                    messages=messages,
-                    temperature=temperature,
-                    max_tokens=max_tokens
-                )
                 
-                # More robust error handling
-                if response is None:
-                    raise ValueError("API returned None response")
-                if not hasattr(response, 'choices') or not response.choices:
-                    raise ValueError("API response missing 'choices' attribute or has empty choices")
-                if not hasattr(response.choices[0], 'message'):
-                    raise ValueError("API response first choice missing 'message' attribute")
-                if not hasattr(response.choices[0].message, 'content'):
-                    raise ValueError("API response message missing 'content' attribute")
-                
-                return response.choices[0].message.content
+                if self.provider == "google":
+                    # Handle Gemini API call
+                    response = self.client.models.generate_content(
+                        model=self.model_name,
+                        contents=[msg["content"] for msg in messages],
+                        generation_config={
+                            "temperature": temperature,
+                            "max_output_tokens": max_tokens
+                        }
+                    )
+                    return response.text
+                else:
+                    # Handle other providers
+                    try:
+                        response = self.client.chat.completions.create(
+                            model=self.model_name,
+                            messages=messages,
+                            temperature=temperature,
+                            max_tokens=max_tokens
+                        )
+                    except Exception as e:
+                        # If max_tokens fails, try with max_completion_tokens
+                        response = self.client.chat.completions.create(
+                            model=self.model_name,
+                            messages=messages,
+                            max_completion_tokens=max_tokens
+                        )
+                    
+                    # More robust error handling
+                    if response is None:
+                        raise ValueError("API returned None response")
+                    if not hasattr(response, 'choices') or not response.choices:
+                        raise ValueError("API response missing 'choices' attribute or has empty choices")
+                    if not hasattr(response.choices[0], 'message'):
+                        raise ValueError("API response first choice missing 'message' attribute")
+                    if not hasattr(response.choices[0].message, 'content'):
+                        raise ValueError("API response message missing 'content' attribute")
+                    
+                    return response.choices[0].message.content
+                    
             except (OpenAIError, json.JSONDecodeError, Exception) as e:
                 logger.error(f"Attempt {attempt + 1} failed with error: {str(e)}")
                 
@@ -137,7 +175,7 @@ class LanguageModel:
     
     def get_response(self, prompt: str, temperature: float = 0.7, max_tokens: int = 1000) -> Optional[str]:
         """Get a response from the language model."""
-        if self.provider in ["openai", "deepseek", "zhizengzeng"]:
+        if self.provider in ["openai", "deepseek", "zhizengzeng", "google"]:
             messages = [{"role": "user", "content": prompt}]
             return self._make_api_call(messages, temperature, max_tokens)
         else:
@@ -145,7 +183,7 @@ class LanguageModel:
 
     def get_chat_response(self, messages: List[Dict[str, str]], temperature: float = 0.7, max_tokens: int = 1000) -> Optional[str]:
         """Get a response from the language model using chat format."""
-        if self.provider in ["openai", "deepseek", "zhizengzeng"]:
+        if self.provider in ["openai", "deepseek", "zhizengzeng", "google"]:
             return self._make_api_call(messages, temperature, max_tokens)
         else:
             raise ValueError(f"Unsupported provider: {self.provider}")
