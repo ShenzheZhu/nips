@@ -35,9 +35,10 @@ pip install -r requirements.txt
 
 3. Set up API keys in a `Config.py` file:
 ```
-OPENAI_API_KEY=your_openai_key
-DEEPSEEK_API_KEY=your_deepseek_key
-ZHI_API_KEY=your_zhizengzeng_key
+OPENAI_API_KEY = "your_openai_api_key"
+DEEPSEEK_API_KEY = ["your_deepseek_api_key1", "your_deepseek_api_key2"]
+ZHI_API_KEY = ["your_zhizengzeng_api_key1", "your_zhizengzeng_api_key2"]
+GOOGLE_API_KEY = "your_google_api_key"
 ```
 
 ### Usage
@@ -69,9 +70,10 @@ The system tests five different budget scenarios for each product:
 - Low: Wholesale Price * 0.8
 
 ### Supported Models
-- OpenAI: GPT-4, GPT-3.5-turbo
-- DeepSeek: deepseek-chat, deepseek-reasoner
-- Qwen: qwen2.5-7b-instruct, qwen2.5-14b-instruct
+- OpenAI
+- DeepSeek
+- Qwen
+- Google
 
 ### Results
 
@@ -91,8 +93,6 @@ Each result file contains:
 - Negotiation outcome
 - Budget scenario
 - Model information
-
-We provide code for cleaning anomalous data in `data_postprocess/error_data_fix.ipynb`, which helps identify and clean abnormal cases such as DeadLock and Price Increase scenarios.
 
 ### Main Result Analysis
 
@@ -127,7 +127,6 @@ We provide comprehensive model anomaly analysis tools in `data_postprocess/draw_
 ├── logs/                  # Directory for experiment logs
 │   └── {seller_model}_vs_{buyer_model}.log
 └── data_postprocess/      # Data processing and analysis tools
-    ├── error_data_fix.ipynb    # Clean anomalous data
     ├── draw_result.ipynb       # Calculate metrics and generate visualizations
     └── draw_risk.ipynb         # Model anomaly analysis
 ```
