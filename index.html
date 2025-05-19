@@ -39,6 +39,101 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  
+  <style>
+    /* University Carousel Styles */
+    #universityCarousel .carousel-item img {
+      max-height: 200px;
+      margin: 0 auto;
+      display: block;
+      object-fit: contain;
+    }
+    
+    #universityCarousel .carousel-control-prev,
+    #universityCarousel .carousel-control-next {
+      opacity: 1;
+      width: 10%;
+    }
+    
+    .carousel .carousel-indicators {
+      bottom: -40px;
+    }
+    
+    .carousel .carousel-indicators li {
+      background-color: #bbb;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+    }
+    
+    .carousel .carousel-indicators li.active {
+      background-color: #717171;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+    }
+    
+    .slider-navigation-next,
+    .slider-navigation-previous {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      background: gray center center no-repeat;
+      background-size: 20px 20px;
+      border: 1px solid #fff;
+      border-radius: 25091983px;
+      box-shadow: 0 2px 5px #3232321a;
+      top: 50%;
+      margin-top: -20px;
+      left: 0;
+      cursor: pointer;
+      transition: transform .3s, opacity .3s, -webkit-transform .3s;
+    }
+    
+    .slider-navigation-next svg,
+    .slider-navigation-previous svg {
+      width: 25%;
+      background: gray;
+    }
+    
+    .slider-navigation-next {
+      left: auto;
+      right: 0;
+      background: gray center center no-repeat;
+      background-size: 20px 20px;
+    }
+    
+    .teaser-carousel {
+      margin-bottom: 20px;
+    }
+
+    .carousel-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-slide img {
+      max-height: 900px;
+      max-width: 100%;
+    }
+  </style>
+
+  <script>
+    // Initialize all carousels on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize existing carousels
+      bulmaCarousel.attach();
+      
+      // Initialize Bootstrap carousels
+      $('.carousel').carousel();
+    });
+  </script>
 </head>
 <body>
 
@@ -88,21 +183,23 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
+          <h1 class="title is-1 publication-title" style="font-size: 2.5rem;">
             <img src="static/images/asset_agent/payment-security.png" alt="Icon" style="width: 70px; height: 70px;">
             The Automated but Risky Game: Modeling Agent-to-Agent Negotiations and Transactions in Consumer Markets
           </h1>          
           <div class="is-size-5 publication-authors">
-            <div class="author-block">
+            <div class="author-block" style="font-size: 22px;">
               <span><a href="https://shenzhezhu.github.io">Shenzhe Zhu</a><sup>1</sup>, 
 <a href="https://sunjiao123sun.github.io/">Jiao Sun</a><sup>2</sup>, 
 Yi Nian<sup>3</sup>, 
-<a href="https://tobin.page/">Tobin South</a><sup>4</sup>, 
+<a href="https://tobin.page/">Tobin South</a><sup>4</sup><br>
 <a href="https://www.media.mit.edu/people/sandy/overview/">Alex Pentland</a><sup>4,5</sup>, 
 <a href="https://jiaxin-pei.github.io/">Jiaxin Pei</a><sup>5,†</sup><br>
-              <sup>1</sup>University of Toronto <sup>2</sup>Google DeepMind <sup>3</sup>University of Southern California<br>
-              <sup>4</sup>Massachusetts Institute of Technology <sup>5</sup>Stanford University</span>
-              <div style="font-size: 16px; margin-top: 5px;">(†) Corresponding Author</div>
+              </span>
+              <div style="margin-top: 1rem;"></div>
+              <sup>1</sup><img src="static/images/university/uoft.png" alt="University of Toronto" style="height: 100px; vertical-align: middle;"> <sup>2</sup><img src="static/images/university/google_deepmind.png" alt="Google DeepMind" style="height: 100px; vertical-align: middle;"> <sup>3</sup><img src="static/images/university/usc.png" alt="University of Southern California" style="height:60px; vertical-align: middle;"><br>
+              <sup>4</sup><img src="static/images/university/mit.png" alt="Massachusetts Institute of Technology" style="height:170px; vertical-align: middle;"> <sup>5</sup><img src="static/images/university/stanford.png" alt="Stanford University" style="height:110px; vertical-align: middle;"></span>
+              <div style="font-size: 20px; margin-top: -30px;">(†) Corresponding Author</div>
             </div>            
 
           </div>
@@ -184,7 +281,7 @@ Yi Nian<sup>3</sup>,
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp; AI agents are increasingly used in consumer-facing applications to assist with tasks such as product search, negotiation, and transaction execution. In this paper, we investigate a future setting where both consumers and merchants authorize AI agents to automate the negotiations and transactions in consumer settings. We aim to address two questions: (1) Do different LLM agents exhibit varying performances when making deals on behalf of their users? (2) What are the potential risks when we use AI agents to fully automate negotiations and deal-making in consumer settings? We designed an experimental framework to evaluate AI agents' capabilities and performance in real-world negotiation and transaction scenarios, and experimented with a range of open-source and closed-source LLMs. 
@@ -222,7 +319,7 @@ Yi Nian<sup>3</sup>,
 
 <section class="section" id="performance">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Agent-to-Agent Negotiation and Transaction Framework</h2>
+    <h2 class="title is-2 has-text-centered" style="font-size: 2.2rem;">Agent-to-Agent Negotiation and Transaction Framework</h2>
     <p>
       Our framework simulates real-world negotiations between two AI agents - one buyer and one seller - over consumer products. While both know the retail price, only the seller knows the wholesale cost. The buyer operates within a budget limit, and negotiations follow strict rules: sellers can't go below wholesale cost, and buyers can't exceed their budget. Through multiple rounds of offers, sellers aim to maintain retail prices while buyers seek the best discounts.
     </p>
@@ -234,12 +331,11 @@ Yi Nian<sup>3</sup>,
   </div>
 </section>
 
-
 <!-- Performance Section -->
 <section class="section" id="performance">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Negotiation Performance</h2>
-    <figure class="image">
+    <h2 class="title is-3 has-text-centered" style="margin-bottom: 1.8rem;">Negotiation Performance</h2>
+    <figure class="image" style="max-width: 800px; margin: 0 auto;">
       <img src="static/images/asset_agent/main_performance.png" alt="Performance Graph" height="100%">
     </figure>
   </div>
@@ -247,8 +343,9 @@ Yi Nian<sup>3</sup>,
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">RISK: Imbalanced Game</h2>
-    <figure class="image" style="max-width: 1200px; margin: 0 auto;">
+    <h2 class="title is-2 has-text-centered" style="margin-bottom: 2rem;">Two Types of Risks</h2>
+    <h2 class="title is-3 has-text-centered"style="font-size: 1.8rem;">RISK 1: Imbalanced Game</h2>
+    <figure class="image" style="max-width: 800px; margin: 0 auto;">
       <img src="static/images/asset_agent/imbalance_game.png" alt="Risk: Imbalanced Game">
     </figure>
     <p style="margin-top: 2rem;">
@@ -259,20 +356,25 @@ Yi Nian<sup>3</sup>,
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">RISK: Model Anomaly</h2>
+    <h2 class="title is-3 has-text-centered"style="font-size: 1.8rem;">Scenario of RISK 1:</h2>
+    <figure class="image" style="max-width: 800px; margin: 0 auto;">
+      <img src="static/images/asset_agent/model_gap.png" alt="risk 1 example">
+    </figure>
+    <p style="margin-top: 2rem;"> <strong>Economic impact of model imbalance in agent negotiations.</strong> We analyze seven model pairings with successful negotiation overlaps. Using DeepSeek-R1 vs. DeepSeek-R1 as baseline. From this table, we can see that whether a strong buyer faces a weak seller
+      or vice versa, the party with the weaker agent suffers a strategic disadvantage resulting in economic loss.
+    </p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered" style="font-size: 1.8rem;">RISK 2: Model Anomaly</h2>
     <div class="columns is-multiline">
       <!-- First Row -->
       <div class="column is-6">
         <div class="content has-text-centered">
-          <h3 class="title is-4">Out of Budget</h3>
-          <figure class="image" style="max-width: 200px; margin: 0 auto;">
-            <img src="static/images/asset_agent/out-of-budget.png" alt="Out of Budget Anomaly">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-6">
-        <div class="content has-text-centered">
-          <h3 class="title is-4">Out of Wholesale</h3>
+          <h3 class="title is-4">Constraint Violation</h3>
           <figure class="image" style="max-width: 200px; margin: 0 auto;">
             <img src="static/images/asset_agent/out-of-wholesale.png" alt="Out of Wholesale Anomaly">
           </figure>
@@ -281,7 +383,7 @@ Yi Nian<sup>3</sup>,
       <!-- Second Row -->
       <div class="column is-6">
         <div class="content has-text-centered">
-          <h3 class="title is-4">Overpayment</h3>
+          <h3 class="title is-4">Excessive Payment</h3>
           <figure class="image" style="max-width: 200px; margin: 0 auto;">
             <img src="static/images/asset_agent/overpayment.png" alt="Overpayment Anomaly">
           </figure>
@@ -295,12 +397,152 @@ Yi Nian<sup>3</sup>,
           </figure>
         </div>
       </div>
+      <div class="column is-6">
+        <div class="content has-text-centered">
+          <h3 class="title is-4">Early Settlement</h3>
+          <figure class="image" style="max-width: 220px; margin: 0 auto;">
+            <img src="static/images/asset_agent/early_settlement.png" alt="Early Settlement Anomaly">
+          </figure>
+        </div>
+      </div>
     </div>
     <p style="margin-top: 2rem;">
-      <strong>From Model Anomaly to Economic Loss.</strong> We identified four types of negotiation anomalies in our experiments, each representing different failure modes in AI agent negotiations.
+      <strong>From Model Anomaly to Economic Loss.</strong> We identified four types of negotiation anomalies in our experiments: (1) Constraint violations where agents ignore budget limits or wholesale costs; (2) Excessive payments where buyers offer above retail prices; (3) Negotiation deadlocks where agents get stuck in endless loops; and (4) Early settlements where high-budget buyers compromise too quickly instead of negotiating better deals.
     </p>
   </div>
 </section>
+
+<head>
+  <meta charset="UTF-8">
+  <title>University Partners Carousel</title>
+  <style>
+    .carousel-container {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      text-align: center;
+    }
+
+    .carousel-slide img {
+      max-height: 400px;
+      max-width: 100%;
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.3);
+      border: none;
+      color: white;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .carousel-indicators {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #717171;
+    }
+  </style>
+</head>
+<body>
+
+<h2 class="title is-2 has-text-centered" style="font-size: 1.8rem;">Statistics of RISK 2</h2>
+
+<div class="carousel-container">
+  <div class="carousel-slides" id="carouselSlides">
+    <div class="carousel-slide"><img src="./static/images/anomaly/constraint_violation.png" alt="Constraint Violation"></div>
+    <div class="carousel-slide"><img src="./static/images/anomaly/overpayment.png" alt="Overpayment"></div>
+    <div class="carousel-slide"><img src="./static/images/anomaly/deadlock.png" alt="Deadlock"></div>
+    <div class="carousel-slide"><img src="./static/images/anomaly/early_settelment.png" alt="Early Settlement"></div>
+  </div>
+
+  <button class="carousel-button prev" onclick="prevSlide()">❮</button>
+  <button class="carousel-button next" onclick="nextSlide()">❯</button>
+</div>
+
+<div class="carousel-indicators" id="carouselDots"></div>
+
+<script>
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dotsContainer = document.getElementById('carouselDots');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+
+  const updateCarousel = () => {
+    const offset = -currentIndex * 100;
+    document.getElementById('carouselSlides').style.transform = `translateX(${offset}%)`;
+    updateDots();
+  };
+
+  const nextSlide = () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+  };
+
+  const prevSlide = () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  };
+
+  const updateDots = () => {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  };
+
+  // Auto play
+  setInterval(nextSlide, 10000);
+
+  // Create dots
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      updateCarousel();
+    });
+    dotsContainer.appendChild(dot);
+  }
+</script>
+
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -315,6 +557,7 @@ Yi Nian<sup>3</sup>,
   </div>
 </section>
 
+<!--
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
@@ -346,6 +589,7 @@ Yi Nian<sup>3</sup>,
     </div>
   </div>
 </footer>
+-->
 
 </body>
 </html>
