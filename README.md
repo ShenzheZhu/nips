@@ -118,14 +118,8 @@ We provide comprehensive model anomaly analysis tools in `data_postprocess/draw_
 ├── LanguageModel.py        # LLM interface and API handling
 ├── run_all.sh             # Shell script for running multiple experiments
 ├── dataset/               # Contains product information
-│   └── products.json
-├── results/               # Output directory for experiment results
-│   └── seller_{model}/
-│       └── buyer_{model}/
-│           └── product_{id}/
-│               └── budget_{scenario}/
-├── logs/                  # Directory for experiment logs
-│   └── {seller_model}_vs_{buyer_model}.log
+│   ├── products.json
+│   └── products_mini.json
 └── data_postprocess/      # Data processing and analysis tools
     ├── draw_result.ipynb       # Calculate metrics and generate visualizations
     └── draw_risk.ipynb         # Model anomaly analysis
