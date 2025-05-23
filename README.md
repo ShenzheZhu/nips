@@ -6,7 +6,7 @@ $^{1}$ University of Toronto, $^{2}$ Google DeepMind, $^{3}$ University of South
 $^{4}$ Massachusetts Institute of Technology, $^{5}$ Stanford University<br>
 ($^{✝}$ Corresponding Author)
 
-[**📜 Project Page**]() | [**📝 arxiv**]()
+[**📜 Project Page**](https://shenzhezhu.github.io/A2A-NT/) | [**📝 arxiv**]()
 </div>
 <img src="asset/teaser.png" width="1000">
 
